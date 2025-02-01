@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-theme= "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+
+    <!-- fav icon -->
+     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/17694/17694938.png" type="image/x-icon">
+
+    <!-- Font Awsome Cdn-->
+    <script src="https://kit.fontawesome.com/4ae2a800f0.js" crossorigin="anonymous"></script>
+
+    <!-- Daisyui Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Taiwind Css cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+          --text-firstcolor: "#179800";
+          --background-firstcolor: "#179800";
+          --color-sec: #EFEBE3;
+          --background-sec: #EFEBE3;
+          --color-text: #111111;
+          --background-text: #111111;
+          --font-sora: "Sora", serif;
+        }
+      </style>
+
+</head>
+<body class="font-sora">
+
+ 
+
+    <header>
+        <nav class="container mx-auto flex justify-between p-4 max-lg:border-b-2 max-lg:border-green-600">
+            <!-- logo -->
+             <div>
+              <img class="hidden lg:block" src="c2-assets/logo-header.png" alt="">
+             </div>
+
+             
+             
+              <div class="space-x-4 hidden lg:block lg:pt-5">
+                <a class="hover:underline hover:text-green-700" href="">Product</a>
+                <a class="hover:underline hover:text-green-700" href="">Services</a>
+                <a class="hover:underline hover:text-green-700" href="">Contact Us</a>
+              </div>
+             
+           
+
+              <div class="flex justify-between items-center hidden lg:block">
+                <i class="fa-solid fa-magnifying-glass   bg-transparent"></i>
+                <i class="fa-solid fa-cart-shopping ml-3  bg-transparent"></i>
+              <a class="ml-3 btn bg-[#179800] text-[#111111] bg-transparent border border-green-700 hover:text-white hover:bg-green-600">Login</a>
+              <a class="ml-3 btn bg-[#179800] text-white hover:bg-green-600">Register</a>
+            </div>
+
+            <div class="block lg:hidden flex items-center">
+              <i class="fa-solid fa-bars text-3xl text-[#179800]"></i>
+            </div>
+
+        </nav>
+
+         
+
+        <section class="">
+            <div class="hero pt-16 bg-[#efebe3]">
+                <div class="hero-content text-center p-0 px-4">
+                  <div class="max-w-full">
+                    <h1 class="text-5xl font-bold md:w-4/6 mx-auto">Freshness <span class="animate-pulse text-[#179800]">You Can 
+                        Count</span> On, Prices You’ll Love!</h1>
+                    <p class="py-6 mx-auto md:w-4/6 animate-bounce">
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                    </p>
+                    <img class="w-xl mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </section>
+    </header>
+
+    <main>
+
+      
+
+        <section class="py-10 lg:py-32 px-4">
+            <div class="container mx-auto">
+                <div>
+                    <h1 class="text-3xl lg:text-5xl font-bold pb-8 text-[#179800]">Service</h1>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    <div class="card bg-sec ">
+                        <figure class="px-10 pt-10">
+                          <img
+                            src="c2-assets/service.png"
+                            alt="Shoes"
+                            class="bg-white rounded-full p-6" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">24/7 Services </h2>
+                          <p>24/7 service might be offered by a supermarket, convenience store, ATM, automated online assistant, filling station, restaurant, concierge services or a staffed datacenter</p>
+                        </div>
+                      </div>
+                      <div class="card bg-sec ">
+                        <figure class="px-10 pt-10">
+                          <img
+                            src="c2-assets/delivery.png"
+                            alt="Shoes"
+                            class="bg-white rounded-full p-6" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Fast Delivery</h2>
+                          <p>Faster delivery makes it convenient for customers, which leads to higher satisfaction and encourages repeat purchases.</p>
+                        </div>
+                      </div>
+                      <div class="card bg-sec ">
+                        <figure class="px-10 pt-10 ">
+                          <img src="c2-assets/healthy.png" alt="">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Healthy Products </h2>
+                          <p>Health products are -toothpastes, sunscreens, vitamins and minerals, contact lens solution, pain relievers, cold remedies, antiperspirants and disinfectants.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+         
+
+
+        <section class="py-10 lg:py-32 px-4 bg-sec">
+            <div class="container mx-auto">
+                <div>
+                    <h1 class="text-3xl lg:text-5xl font-bold pb-8 text-[#179800]">Popular Products</h1>
+                </div>
+                <div class="lg:flex lg:gap-6 space-y-8 lg:space-y-0">
+                    <!-- left card -->
+                    <div class="flex-1 card bg-linear-[130deg,green_1%,green_0%,lime_0%,white]">
+                        <div class="card-body">
+                          <h2 class="card-title">30% off</h2>
+                          <p>Discover a world of treats, toys, and essentials handpicked for </p>
+                          <div class="mt-4"><a href="" class="py-2 px-4 rounded bg-white">Buy Now</a></div>
+                        </div>
+                        <figure class="card-actions justify-end">
+                          <img
+                            src="c2-assets/vegetable-offer.png" />
+                        </figure>
+                      </div>
+
+                    
+
+                       <div class="flex-2 grid grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- card-1 -->
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/onion.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Onion 1KG</h4>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/tomato.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Tomato 500 g </h4>
+                                <small>$20.99</small>
+                            </div>
+                        </div>
+
+                      
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/potato.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Potato 1 KG</h4>
+                                <small>$49.99</small>
+                            </div>
+                        </div>
+
+                        
+
+
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/tomato.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Tomato 500 g </h4>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                     
+
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/onion.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Onion 1KG</h4>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                       
+
+
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/tomato.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Tomato 500 g </h4>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                        
+
+
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/potato.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Potato 1 KG</h4>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                         
+
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/onion.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Onion 1KG</h4>
+                                <small>$39.99</small>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="flex gap-2 bg-white items-center px-5 rounded-lg py-3 max-lg:hidden">
+                            <img class="bg-sec rounded-lg pt-1" src="c2-assets/tomato.png" alt="">
+                            <div class="bg-white">
+                                <i class="fa-solid fa-star text-yellow-500"></i><span> <small>4.5</small></span>
+                                <h4 class="font-bold">Tomato 500 g </h4>
+                                <small>$20        .99</small>
+                            </div>
+                        </div>
+
+
+
+                       </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+
+        <section class="py-10 lg:py-32 px-4">
+            <div class="container mx-auto">
+              <div>
+                <h1 class="text-3xl lg:text-5xl font-bold pb-8 text-[#179800]">Groceries & Snacks</h1>
+            </div>
+              
+              <div class="bg-white">
+              
+                  <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+
+                    <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="https://media.istockphoto.com/id/1172183568/photo/fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=6_w6FQWXlN-KjvxqZA_OSZGz0ididqTaNIRm4IxuksA=" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Fruits & Vegetables</h2>
+                           </div>
+                    </div>
+
+                    <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="https://i.chaldn.com/_mpimage/premium-perishables?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D132312&q=best&v=1&m=400" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Meat & Fish</h2>
+                           </div>
+                    </div>
+
+                    <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="https://i.chaldn.com/_mpimage/vegetable-snacks?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D118815&q=low&v=1&m=400" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Frozen Foods</h2>
+                           </div>
+                    </div>
+
+                    <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="https://m.media-amazon.com/images/I/71mENtwDN9L._SL1500_.jpg" class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Spices</h2>
+                          </div>
+                    </div>
+
+                    <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="https://i2.wp.com/www.spiritofindiapattaya.com/wp-content/uploads/2018/09/softdrinks.jpg?fit=1280%2C853&ssl=1" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                    
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Beverages</h2>
+                          
+                        </div>
+                    </div>
+
+                    <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="https://cdn.shopify.com/s/files/1/0741/2259/2535/files/6-1_1fe4f112-e983-4455-8bcb-2c7880af98bf.jpg?v=1723633256" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Snacks</h2>
+                           </div>
+                    </div>
+
+                   <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="images/special-ingredients.webp" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Special Ingredients</h2>
+                           </div>
+                    </div>
+
+                    <div class="group relative shadow rounded-lg p-4 cursor-pointer">
+                      <img src="https://img.thrfun.com/img/139/437/bottles_of_oil_s2.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+                        <div class="mt-4">
+                          <h2 class="text-xl font-bold text-center text-[#981900]">Cooking Oil</h2>
+                           </div>
+                    </div>
+
+                    
+
+                    
+
+                  </div>
+              </div>
+              
+
+            </div>
+        </section>
+
+
+       
+
+
+        <section class="py-10 lg:pt-32 px-4">
+          <div class="container mx-auto">
+              <div>
+                  <h1 class="text-3xl lg:text-5xl font-bold pb-8 text-[#179800]">Arrival & Offers</h1>
+              </div>
+              <div class="lg:flex gap-5 lg:justify-between max-lg:space-y-5">
+                <!-- card-1 -->
+                <div class="flex bg-[#115414] rounded-lg items-center py-4 justify-around  lg:w-7/12">
+                  <div class="pl-4 lg:pl-10 space-y-5">
+                    <img src="images/dawat-logo.png" alt="">
+                    <h3 class="bg-green-400 text-white text-center py-4 rounded-xl text-sm lg:text-lg">Cook Exotic Dishes</h3>
+                    <h2 class="bold text-xl lg:text-3xl text-white">UP to <b>20% OFF</b></h2>
+                  </div>
+                  <div>
+                    <img src="images/dawat-mock-up.png" alt="">
+                  </div>
+                </div>
+
+              
+
+
+                 <div class="flex bg-[#102861] rounded-lg items-center py-4 justify-around lg:w-5/12">
+                  <div class="px-4 lg:px-10 space-y-5">
+                    <img class="pr-5" src="images/india-gate-logo.png" alt="">
+                    <h3 class="bg-blue-400 text-white text-center py-4 rounded-xl text-sm lg:text-lg">World’s No.1 Rice</h3>
+                    <h2 class="bold text-xl lg:text-3xl text-white">UP to <b>40% OFF</b></h2>
+                  </div>
+                  <div>
+                    <img src="images/india-gate-mock-up.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+              </section>
+
+    </main>
+    
+ 
+
+    <footer class="bg-[#179800] mt-60">
+
+      <div class="flex justify-center p-4 relative -top-50">
+        <div class="lg:flex items-center justify-center bg-sec rounded-2xl justify-evenly p-5">
+          <div>
+            <div><img src="images/vegetable-busket.png" alt=""></div>
+          </div>
+          <div class="space-y-5">
+            <h1 class="text-xl font-bold">Get Grocery News!</h1>
+            <p>Exclusive training tips, ticks, product deals and more.</p>
+            <input type="email" placeholder="Enter email...." class="input input-bordered w-full" />
+            <button class="bg-[#179800] text-white px-5 py-2 rounded-xl">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="flex-col flex lg:flex-row text-base-content px-10 container mx-auto gap-12 lg:items-center pt-30 lg:pt-50 relative -top-60">
+        <div class="flex-1">
+          <img src="images/logo-footer.png" alt="">
+          <p class="text-white pt-5">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <div class="flex-1">
+          <a class="link link-hover text-white">Product</a><br>
+          <a class="link link-hover text-white">Services</a><br>
+          <a class="link link-hover text-white">Contact Us</a>
+        </div>
+        <div class="flex-1">
+          <h6 class="text-white pb-5">Follow Us</h6>
+          <a class="link link-hover text-white mr-4 text-2xl"><i class="fa-brands fa-facebook fa-fw"></i></a>
+          <a class="link link-hover text-white mr-4 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+          <a class="link link-hover text-white mr-4 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="link link-hover text-white text-2xl"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </footer>
+
+    </footer>
+
+</body>
+</html>
